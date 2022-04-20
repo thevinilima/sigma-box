@@ -1,15 +1,17 @@
 ::selection {
-  background-color: #eee !important;
+  background-color: #ccc !important;
   color: black !important;
 }
 
 nav input {
   background-color: transparent !important;
-  border: 1px solid #aaa !important;
+  border: 1px solid #555 !important;
+  outline: none !important;
+  color: #eee !important;
 }
 
 main {
-  box-shadow: 0 0 1em #111;
+  box-shadow: 0 0 1em #222;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -114,15 +116,13 @@ footer {
   .interview-container {
     margin-bottom: 20px;
   }
-}
 
-@media screen and (max-width: 576px) {
   .article-thumbnail {
     margin-bottom: 20px;
   }
 
   .article-preview:last-child {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #222;
     margin-bottom: 5vh;
   }
 }
