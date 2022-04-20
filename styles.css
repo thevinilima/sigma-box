@@ -1,7 +1,16 @@
+::selection {
+  background-color: #eee !important;
+  color: black !important;
+}
+
+nav input {
+  background-color: transparent !important;
+  border: 1px solid #aaa !important;
+}
+
 main {
-  box-shadow: 0 0 1em #ccc;
+  box-shadow: 0 0 1em #111;
   border-radius: 10px;
-  background-color: #fefefe;
   overflow: hidden;
 }
 
@@ -9,8 +18,8 @@ main section {
   padding: 20px;
 }
 
-main section:nth-child(odd) {
-  background-color: #fafafa;
+.movie-details {
+  margin: 5px 0;
 }
 
 .movie-poster {
@@ -57,6 +66,11 @@ main section:nth-child(odd) {
   display: initial;
 }
 
+.avatar {
+  width: 50px;
+  filter: invert(80%);
+}
+
 .article-preview {
   padding: 5vh 0;
 }
@@ -66,8 +80,8 @@ main section:nth-child(odd) {
 }
 
 .article-preview:nth-child(3) {
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
 }
 
 .article-thumbnail img {
@@ -75,8 +89,31 @@ main section:nth-child(odd) {
   border-radius: 5px;
 }
 
+.chips {
+  display: flex;
+}
+
+.chip {
+  padding: 2px 10px;
+  margin-right: 5px;
+  color: #ccc;
+  background-color: #222;
+  border-radius: 15px;
+  font-size: 0.8em;
+}
+
 footer {
   padding: 20px 0;
+}
+
+@media screen and (max-width: 990px) {
+  .movie-trailer {
+    margin-bottom: 10px;
+  }
+
+  .interview-container {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 576px) {

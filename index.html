@@ -8,14 +8,14 @@
   <link rel="stylesheet" href="styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <title>Sigma Time</title>
+  <title>Sigma Box</title>
 </head>
 
-<body>
-  <header class="bg-light">
-    <nav class="navbar navbar-expand-lg navbar-light container">
+<body class="bg-black text-light">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark container">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Sigma Time</a>
+        <a class="navbar-brand" href="#">Sigma Box</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -45,12 +45,12 @@
       </div>
     </nav>
   </header>
-  <main class="container my-5">
+  <main class="container my-5 bg-black">
     <section class="row" id="releases">
       <h2 class="text-center mb-5">Lançamentos</h2>
       <div class="container">
         <div class="row">
-          <div id="carouselExampleIndicators" class="carousel slide carousel-dark" data-bs-ride="carousel">
+          <div id="carouselExampleIndicators" class="carousel slide carousel-light" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -64,164 +64,258 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="row" style="margin-bottom: 50px;">
-                  <div class="col-xs-12 col-12 col-md-6" style="min-height: 290px;">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/" title="YouTube video player"
-                      frameborder="0"
+                  <div class="col-12 col-lg-6 movie-trailer" style="min-height: 290px;">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/81mibtQWWBg"
+                      title="YouTube video player" frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen></iframe>
                   </div>
-                  <div class="col-xs-12 col-12 col-md-6">
+                  <div class="col-12 col-lg-6">
                     <div class="row mb-2">
-                      <h4>American Psycho</h4>
+                      <h4>Psicopata Americano</h4>
                     </div>
                     <div class="row">
-                      <div class="col-12">
-                        <strong>Sinopse:</strong>
+                      <div class="col-12 movie-details">
+                        <span>
+                          <strong>Sinopse:</strong>
+                          Em Nova York, em 1987, o belo jovem profissional Patrick Bateman tem uma segunda vida como um
+                          horrível assassino em série durante a noite. O elenco é formado pelo detetive, a noiva, a
+                          amante, o colega de trabalho e a secretária. Esta é uma comédia de humor seco que examina os
+                          elementos que transformam um homem em um monstro.
+                        </span>
                       </div>
                     </div>
-                    <div class="row ">
-                      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
-                        <strong>Diretor:</strong>
+                    <div class="row">
+                      <div class="row">
+                        <div class="col-12 col-md-6 movie-details">
+                          <span>
+                            <strong>Diretora:</strong>
+                            Mary Harron
+                          </span>
+                        </div>
+                        <div class="col-12 col-md-6 movie-details">
+                          <span>
+                            <strong>Roteiro:</strong>
+                            Mary Harron
+                          </span>
+                        </div>
                       </div>
-
-                      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
-                        <strong>Roteiro:</strong>
+                      <div class="row">
+                        <div class="col-12 movie-details">
+                          <span>
+                            <strong>Elenco:</strong>
+                            Christian Bale, Jared Leto, Wilem Dafoe, Chloë Sevigny
+                          </span>
+                        </div>
                       </div>
-
-                      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
-                        <strong>Elenco:</strong>
+                      <div class="row">
+                        <div class="col-12 col-sm-6 movie-details">
+                          <span>
+                            <strong>Estreia:</strong>
+                            2000
+                          </span>
+                        </div>
+                        <div class="col-12 col-sm-6 movie-details">
+                          <span>
+                            <strong>Avaliação:</strong>
+                            ★★★★★
+                          </span>
+                        </div>
                       </div>
                     </div>
-
-                    <div class="col-12">
-                      <strong>Estreia:</strong>
-                    </div>
-
-                    <div class="col-12">
-                      <strong>Avaliação:</strong>
-                    </div>
-
                   </div>
                 </div>
               </div>
               <div class="carousel-item">
                 <div class="row" style="margin-bottom: 50px;">
-                  <div class="col-xs-12 col-12 col-md-6" style="min-height: 290px;">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/" title="YouTube video player"
-                      frameborder="0"
+                  <div class="col-12 col-lg-6 movie-trailer" style="min-height: 290px;">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/T5IligQP7Fo"
+                      title="YouTube video player" frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen></iframe>
                   </div>
-                  <div class="col-xs-12 col-12 col-md-6">
+                  <div class="col-12 col-lg-6">
                     <div class="row mb-2">
                       <h4>Taxi Driver</h4>
                     </div>
                     <div class="row">
-                      <div class="col-12">
-                        <strong>Sinopse:</strong>
+                      <div class="col-12 movie-details">
+                        <span>
+                          <strong>Sinopse:</strong>
+                          Em Taxi Driver - Motorista de Táxi, Travis Bickle, 26 anos (Robert De Niro) e veterano da
+                          Guerra do Vietnã, é um homem solitário no meio da grande Nova York. Logo, ele começa a
+                          trabalhar como motorista de táxi no turno da noite, crescendo o sentimento de revolta pela
+                          miséria, o vício, a violência e a prostituição que estão sempre à sua volta. Travis começa a
+                          cogitar, então, de tomar algumas medidas drásticas para mudar esse cenário.
+                        </span>
                       </div>
                     </div>
-                    <div class="row ">
-                      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
-                        <strong>Diretor:</strong>
+                    <div class="row">
+                      <div class="row">
+                        <div class="col-12 col-md-6 movie-details">
+                          <span>
+                            <strong>Diretor:</strong>
+                            Martin Scorsese
+                          </span>
+                        </div>
+                        <div class="col-12 col-md-6 movie-details">
+                          <span>
+                            <strong>Roteiro:</strong>
+                            Paul Schrader
+                          </span>
+                        </div>
                       </div>
-
-                      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
-                        <strong>Roteiro:</strong>
+                      <div class="row">
+                        <div class="col-12 movie-details">
+                          <span>
+                            <strong>Elenco:</strong>
+                            Robert De Niro, Cybill Shepherd, Peter Boyle
+                          </span>
+                        </div>
                       </div>
-
-                      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
-                        <strong>Elenco:</strong>
+                      <div class="row">
+                        <div class="col-12 col-sm-6 movie-details">
+                          <span>
+                            <strong>Estreia:</strong>
+                            1976
+                          </span>
+                        </div>
+                        <div class="col-12 col-sm-6 movie-details">
+                          <span>
+                            <strong>Avaliação:</strong>
+                            ★★★★★
+                          </span>
+                        </div>
                       </div>
                     </div>
-
-                    <div class="col-12">
-                      <strong>Estreia:</strong>
-                    </div>
-
-                    <div class="col-12">
-                      <strong>Avaliação:</strong>
-                    </div>
-
                   </div>
                 </div>
               </div>
               <div class="carousel-item">
                 <div class="row" style="margin-bottom: 50px;">
-                  <div class="col-xs-12 col-12 col-md-6" style="min-height: 290px;">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/" title="YouTube video player"
-                      frameborder="0"
+                  <div class="col-12 col-lg-6 movie-trailer" style="min-height: 290px;">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dJTU48_yghs"
+                      title="YouTube video player" frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen></iframe>
                   </div>
-                  <div class="col-xs-12 col-12 col-md-6">
+                  <div class="col-12 col-lg-6">
                     <div class="row mb-2">
                       <h4>Her</h4>
                     </div>
                     <div class="row">
-                      <div class="col-12">
-                        <strong>Sinopse:</strong>
+                      <div class="col-12 movie-details">
+                        <span>
+                          <strong>Sinopse:</strong>
+                          O solitário escritor Theodore desenvolve uma relação de amor especial com o novo sistema
+                          operacional do seu computador. Surpreendentemente, ele acaba se apaixonando pela voz deste
+                          programa, uma entidade intuitiva e sensível chamada Samantha.
+                        </span>
                       </div>
                     </div>
-                    <div class="row ">
-                      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
-                        <strong>Diretor:</strong>
+                    <div class="row">
+                      <div class="row">
+                        <div class="col-12 col-md-6 movie-details">
+                          <span>
+                            <strong>Diretor:</strong>
+                            Spike Jonze
+                          </span>
+                        </div>
+                        <div class="col-12 col-md-6 movie-details">
+                          <span>
+                            <strong>Roteiro:</strong>
+                            Spike Jonze
+                          </span>
+                        </div>
                       </div>
-
-                      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
-                        <strong>Roteiro:</strong>
+                      <div class="row">
+                        <div class="col-12 movie-details">
+                          <span>
+                            <strong>Elenco:</strong>
+                            Joaquin Phoenix, Amy Adams, Rooney Mara
+                          </span>
+                        </div>
                       </div>
-
-                      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
-                        <strong>Estreia:</strong>
+                      <div class="row">
+                        <div class="col-12 col-sm-6 movie-details">
+                          <span>
+                            <strong>Estreia:</strong>
+                            2013
+                          </span>
+                        </div>
+                        <div class="col-12 col-sm-6 movie-details">
+                          <span>
+                            <strong>Avaliação:</strong>
+                            ★★★★★
+                          </span>
+                        </div>
                       </div>
                     </div>
-
-                    <div class="col-12">
-                      <strong>Elenco:</strong>
-                    </div>
-
-                    <div class="col-12">
-                      <strong>Avaliação:</strong>
-                    </div>
-
                   </div>
                 </div>
               </div>
               <div class="carousel-item">
                 <div class="row" style="margin-bottom: 50px;">
-                  <div class="col-xs-12 col-12 col-md-6" style="min-height: 290px;">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/" title="YouTube video player"
-                      frameborder="0"
+                  <div class="col-12 col-lg-6 movie-trailer" style="min-height: 290px;">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KBiOF3y1W0Y"
+                      title="YouTube video player" frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen></iframe>
                   </div>
-                  <div class="col-xs-12 col-12 col-md-6">
+                  <div class="col-12 col-lg-6">
                     <div class="row mb-2">
                       <h4>Drive</h4>
                     </div>
-                    <div class="row ">
-                      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
-                        <strong>Diretor:</strong>
-                      </div>
-
-                      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
-                        <strong>Roteiro:</strong>
-                      </div>
-
-                      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
-                        <strong>Elenco:</strong>
+                    <div class="row">
+                      <div class="col-12 movie-details">
+                        <span>
+                          <strong>Sinopse:</strong>
+                          Um habilidoso motorista, que é dublê em cenas de perseguição em filmes de Hollywood, também
+                          usa seu talento no volante para ser piloto de fuga em assaltos. Seu estilo de vida solitário e
+                          misterioso começa a mudar no momento em que se apaixona por uma mulher cujo marido está
+                          prestes a sair da prisão. Enquanto isso, o chefe da sua oficina mecânica está tentando
+                          organizar uma corrida com dinheiro sujo.
+                        </span>
                       </div>
                     </div>
-
-                    <div class="col-12">
-                      <strong>Estreia:</strong>
+                    <div class="row">
+                      <div class="row">
+                        <div class="col-12 col-md-6 movie-details">
+                          <span>
+                            <strong>Diretor:</strong>
+                            Nicolas Winding Refn
+                          </span>
+                        </div>
+                        <div class="col-12 col-md-6 movie-details">
+                          <span>
+                            <strong>Roteiro:</strong>
+                            Hossein Amini
+                          </span>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 movie-details">
+                          <span>
+                            <strong>Elenco:</strong>
+                            Ryan Gosling, Carey Mulligan, Bryan Cranston
+                          </span>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-6 movie-details">
+                          <span>
+                            <strong>Estreia:</strong>
+                            2011
+                          </span>
+                        </div>
+                        <div class="col-12 col-sm-6 movie-details">
+                          <span>
+                            <strong>Avaliação:</strong>
+                            ★★★★★
+                          </span>
+                        </div>
+                      </div>
                     </div>
-
-                    <div class="col-12">
-                      <strong>Avaliação:</strong>
-                    </div>
-
                   </div>
                 </div>
               </div>
@@ -253,19 +347,19 @@
       </div>
       <div class="container" style="text-align: center;">
         <div class="row">
-          <div class="col-lg-3 col-md-6 mb-4">
-            <div class="movie-poster card" style="border-radius: 10px;">
+          <div class="col-lg-3 col-md-6 mb-4" style="border: none">
+            <div class="movie-poster card" style="border-radius: 10px; border: 1px solid #333">
               <img
-                src="https://a.ltrbxd.com/resized/sm/upload/5b/u9/av/il/ecoY7zJL6Ub3URP1oPhPfGflEjV-0-230-0-345-crop.jpg?k=793f7a046c"
+                src="https://a.ltrbxd.com/resized/film-poster/5/1/5/6/8/51568-fight-club-0-230-0-345-crop.jpg?k=953911821b"
                 alt="">
               <div class="title">
-                <b>American Psycho</b>
+                <b>Clube da Luta</b>
               </div>
               <div class="vignette"></div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 mb-4">
-            <div class="movie-poster card" style="border-radius: 10px;">
+            <div class="movie-poster card" style="border-radius: 10px; border: 1px solid #333">
               <img
                 src="https://a.ltrbxd.com/resized/sm/upload/zt/zd/oi/0f/ekstpH614fwDX8DUln1a2Opz0N8-0-230-0-345-crop.jpg?k=ed45fb6b9f"
                 alt="">
@@ -276,7 +370,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6 mb-4">
-            <div class="movie-poster card" style="border-radius: 10px;">
+            <div class="movie-poster card" style="border-radius: 10px; border: 1px solid #333">
               <img
                 src="https://a.ltrbxd.com/resized/film-poster/4/3/3/8/6/3/433863-the-lighthouse-0-230-0-345-crop.jpg?k=c87f4236bb"
                 alt="">
@@ -287,7 +381,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
-            <div class="movie-poster card" style="border-radius: 10px;">
+            <div class="movie-poster card" style="border-radius: 10px; border: 1px solid #333">
               <img
                 src="https://a.ltrbxd.com/resized/sm/upload/6d/6l/r3/e9/nu7XIa67cXc2t7frXCE5voXUJcN.jpg-0-230-0-345-crop.jpg?k=99387734db"
                 alt="">
@@ -317,8 +411,9 @@
             <div class="row">
               <div class="col-3">
                 <div>
-                  <img class="avatar" src="assets/img/profile-1.png">
+                  <img class="avatar" src="assets/icons/user.svg">
                 </div>
+                <span>Gabriel</span>
               </div>
               <div class="col-9" style="text-align: left;">
                 <h6>Laranja Mecânica</h6>
@@ -331,8 +426,9 @@
             <div class="row">
               <div class="col-3">
                 <div>
-                  <img class="avatar" src="assets/img/profile-2.png">
+                  <img class="avatar" src="assets/icons/user.svg">
                 </div>
+                <span>Marco</span>
               </div>
               <div class="col-9" style="text-align: left;">
                 <h6>O Virgem de 40 Anos</h6>
@@ -345,8 +441,9 @@
             <div class="row">
               <div class="col-3">
                 <div>
-                  <img class="avatar" src="assets/img/profile-3.png">
+                  <img class="avatar" src="assets/icons/user.svg">
                 </div>
+                <span>Paulo</span>
               </div>
               <div class="col-9" style="text-align: left;">
                 <h6>Drive</h6>
@@ -364,97 +461,88 @@
           <h2 class="mb-5">Entrevistas & Making-of</h2>
         </div>
         <div class="row">
-          <div class="col-md-12 col-lg-4 mb-5">
+          <div class="col-md-12 col-lg-4 interview-container">
             <div class="row">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/GrsJDy8VjZk"
+              <iframe width="560" height="250" src="https://www.youtube.com/embed/TO6a_5e5M3U"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
             </div>
             <div class="row mt-4">
               <div class="row">
-                <h4>Nome do Filme</h4>
+                <h4>The Batman (2022)</h4>
               </div>
               <div class="row">
                 <div class="col-12">
                   <span>
-                    <strong>Diretor: </strong>
+                    <strong>Diretor:</strong>
+                    Matt Reeves
                   </span>
                 </div>
               </div>
               <div class="row">
-                <div class="col-8">
+                <div class="col-12">
                   <span>
                     <strong>Roteiro: </strong>
-                  </span>
-                </div>
-                <div class="col-4">
-                  <span>
-                    <strong>Estreia: </strong>
+                    Matt Reeves, Peter Craig
                   </span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-12 col-lg-4 mb-5">
+          <div class="col-md-12 col-lg-4 interview-container">
             <div class="row">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/GrsJDy8VjZk"
+              <iframe width="560" height="250" src="https://www.youtube.com/embed/On8S4X_j5Io"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
             </div>
             <div class="row mt-4">
               <div class="row">
-                <h4>Nome do Filme</h4>
+                <h4>The Batman (2022)</h4>
               </div>
               <div class="row">
                 <div class="col-12">
                   <span>
-                    <strong>Diretor: </strong>
+                    <strong>Diretor:</strong>
+                    Matt Reeves
                   </span>
                 </div>
               </div>
               <div class="row">
-                <div class="col-8">
+                <div class="col-12">
                   <span>
                     <strong>Roteiro: </strong>
-                  </span>
-                </div>
-                <div class="col-4">
-                  <span>
-                    <strong>Estreia: </strong>
+                    Matt Reeves, Peter Craig
                   </span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-12 col-lg-4 mb-5">
+          <div class="col-md-12 col-lg-4 interview-container">
             <div class="row">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/GrsJDy8VjZk"
+              <iframe width="560" height="250" src="https://www.youtube.com/embed/GrsJDy8VjZk"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
             </div>
             <div class="row mt-4">
               <div class="row">
-                <h4>Nome do Filme</h4>
+                <h4>Django Livre (2012)</h4>
               </div>
               <div class="row">
                 <div class="col-12">
                   <span>
-                    <strong>Diretor: </strong>
+                    <strong>Diretor:</strong>
+                    Quentin Tarantino
                   </span>
                 </div>
               </div>
               <div class="row">
-                <div class="col-8">
+                <div class="col-12">
                   <span>
-                    <strong>Roteiro: </strong>
-                  </span>
-                </div>
-                <div class="col-4">
-                  <span>
-                    <strong>Estreia: </strong>
+                    <strong>Roteiro:</strong>
+                    Quentin Tarantino
                   </span>
                 </div>
               </div>
@@ -465,8 +553,8 @@
     </section>
     <section class="row" id="new">
       <div class="container col-md-12 col-lg-8">
-        <div class="row">
-          <h2 class="mb-5">Novidades</h2>
+        <div class="row mb-5">
+          <h2>Novidades</h2>
         </div>
         <div class="row article-preview">
           <div class="col-12 col-md-4 article-thumbnail">
@@ -476,81 +564,79 @@
           </div>
           <div class="col-12 col-md-8">
             <div class="row">
-              <h4>Titulo</h4>
+              <h4>Você com certeza se identificará com esses personagens</h4>
             </div>
             <div class="row">
               <article>
                 <span>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nihil corporis ipsam nemo, placeat
-                  vero
-                  veniam aliquam sequi? Facilis veritatis suscipit reiciendis tempore atque iusto ea iure soluta
-                  asperiores
-                  earum!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nihil corporis ipsam nemo, placeat...
                 </span>
               </article>
             </div>
-            <div class="row">
-              <div class="chips"></div>
+            <div class="row mt-2">
+              <div class="chips">
+                <div class="chip">ryan gosling</div>
+                <div class="chip">sigma male</div>
+                <div class="chip">engraçado</div>
+              </div>
             </div>
           </div>
         </div>
         <div class="row article-preview">
           <div class="col-12 col-md-4 article-thumbnail">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BZTdmZDliMmEtMTIxMi00Mzk5LTg2MDItMTRhYTk1MzlmYjViXkEyXkFqcGdeQWplZmZscA@@._V1_.jpg"
+            <img src="https://64.media.tumblr.com/d141c5349c717f801bfe4e00bfc5d9d6/tumblr_p63ulojwJy1rf1yd3o9_1280.jpg"
               alt="">
           </div>
           <div class="col-12 col-md-8">
             <div class="row">
-              <h4>Titulo</h4>
+              <h4>Qual o sentido da torradeira em Pulp Fiction?</h4>
             </div>
             <div class="row">
               <article>
                 <span>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nihil corporis ipsam nemo, placeat
-                  vero
-                  veniam aliquam sequi? Facilis veritatis suscipit reiciendis tempore atque iusto ea iure soluta
-                  asperiores
-                  earum!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nihil corporis ipsam nemo, placeat...
                 </span>
               </article>
             </div>
-            <div class="row">
-              <div class="chips"></div>
+            <div class="row mt-2">
+              <div class="chips">
+                <div class="chip">hollywood</div>
+                <div class="chip">tarantino</div>
+                <div class="chip">curiosidades</div>
+              </div>
             </div>
           </div>
         </div>
         <div class="row article-preview">
           <div class="col-12 col-md-4 article-thumbnail">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BZTdmZDliMmEtMTIxMi00Mzk5LTg2MDItMTRhYTk1MzlmYjViXkEyXkFqcGdeQWplZmZscA@@._V1_.jpg"
+            <img src="https://m.media-amazon.com/images/M/MV5BNjE3ODc3NTk0N15BMl5BanBnXkFtZTgwNzkwNjM3MDE@._V1_.jpg"
               alt="">
           </div>
           <div class="col-12 col-md-8">
             <div class="row">
-              <h4>Titulo</h4>
+              <h4>Her e a solidão</h4>
             </div>
             <div class="row">
               <article>
                 <span>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nihil corporis ipsam nemo, placeat
-                  vero
-                  veniam aliquam sequi? Facilis veritatis suscipit reiciendis tempore atque iusto ea iure soluta
-                  asperiores
-                  earum!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nihil corporis ipsam nemo, placeat...
                 </span>
               </article>
             </div>
-            <div class="row">
-              <div class="chips"></div>
+            <div class="row mt-2">
+              <div class="chips">
+                <div class="chip">hollywood</div>
+                <div class="chip">oscar</div>
+                <div class="chip">sigma male</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <aside class="col-md-12 col-lg-4">
         <div class="row mb-5">
-          <div class="row">
-            <h2 class="mb-5">Sobre</h2>
+          <div class="row mb-3">
+            <h4>Sobre</h4>
           </div>
           <article class="row">
             <span>
@@ -565,22 +651,25 @@
         </div>
         <div class="row">
           <div class="row">
-            <h2 class="mb-5">Editorial</h2>
+            <h4 class="mb-3">Editorial</h4>
           </div>
           <div class="row ms-1">
             <div class="row">
               <span>
-                <span class="fs-5 fw-bold">Redação</span>
+                <span class="fs-6 fw-bolder">Redação:</span>
+                Vinicius Lima
               </span>
             </div>
             <div class="row">
               <span>
-                <span class="fs-5 fw-bold">Pesquisa</span>
+                <span class="fs-6 fw-bolder">Pesquisa:</span>
+                Vinicius Lima
               </span>
             </div>
             <div class="row">
               <span>
-                <span class="fs-5 fw-bold">Gerente Geral</span>
+                <span class="fs-6 fw-bolder">Gerente Geral:</span>
+                Vinicius Lima
               </span>
             </div>
           </div>
@@ -599,7 +688,7 @@
       </aside>
     </section>
   </main>
-  <footer class="bg-light">
+  <footer class="bg-black text-light">
     <div class="container">
       <div class="row">
         <div class="col-9">
