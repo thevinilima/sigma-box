@@ -104,6 +104,10 @@ main section {
   font-size: 0.8em;
 }
 
+.social-media {
+  filter: invert(80%);
+}
+
 footer {
   padding: 20px 0;
 }
