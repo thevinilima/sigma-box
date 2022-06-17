@@ -31,3 +31,9 @@
   justify-content: center;
   padding: 10px initial;
 }
+
+@media (min-width: 992px) {
+  .autocomplete {
+    width: 35%;
+  }
+}
