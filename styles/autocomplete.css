@@ -1,0 +1,33 @@
+.autocomplete {
+  position: relative;
+}
+
+.ac-items {
+  position: absolute;
+  width: 100%;
+  background-color: black;
+  box-shadow: 0 0 1em #222;
+  border-radius: 10px;
+  max-height: 250px;
+  overflow: auto;
+}
+
+.ac-items div {
+  padding: 5px;
+  cursor: default;
+}
+
+.ac-items div:hover {
+  background-color: #111;
+}
+
+.search-warning {
+  font-size: 0.8em;
+}
+
+.spinner-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px initial;
+}

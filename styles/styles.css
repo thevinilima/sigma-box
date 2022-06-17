@@ -14,6 +14,7 @@ main {
   box-shadow: 0 0 1em #222;
   border-radius: 10px;
   overflow: hidden;
+  margin-top: 90px;
 }
 
 main section {
