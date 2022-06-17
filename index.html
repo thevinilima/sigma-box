@@ -1,710 +1,867 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>Sigma Box</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <title>Sigma Box</title>
-</head>
-
-<body class="bg-black text-light">
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark container">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="assets/img/sigma.png" alt="Sigma Box Logo">
-          Sigma Box
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#releases">lançamentos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#featured">em destaque</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#reviews">reviews</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#interviews">entrevistas & making-of</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#new">novidades</a>
-            </li>
-          </ul>
-          <div class="d-flex">
-            <input class="form-control me-2 dark" type="search" placeholder="Pesquisar filmes" aria-label="Pesquisar">
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main class="container my-5 bg-black">
-    <section class="row" id="releases">
-      <h2 class="text-center mb-5">Lançamentos</h2>
-      <div class="container">
-        <div class="row">
-          <div id="carouselExampleIndicators" class="carousel slide carousel-light" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                aria-label="Slide 4"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row" style="margin-bottom: 50px;">
-                  <div class="col-12 col-lg-6 movie-trailer" style="min-height: 290px;">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/81mibtQWWBg"
-                      title="YouTube video player" frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen></iframe>
-                  </div>
-                  <div class="col-12 col-lg-6">
-                    <div class="row mb-2">
-                      <h4>Psicopata Americano</h4>
-                    </div>
-                    <div class="row">
-                      <div class="col-12 movie-details">
-                        <span>
-                          <strong>Sinopse:</strong>
-                          Em Nova York, em 1987, o belo jovem profissional Patrick Bateman tem uma segunda vida como um
-                          horrível assassino em série durante a noite. O elenco é formado pelo detetive, a noiva, a
-                          amante, o colega de trabalho e a secretária. Esta é uma comédia de humor seco que examina os
-                          elementos que transformam um homem em um monstro.
-                        </span>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="row">
-                        <div class="col-12 col-md-6 movie-details">
-                          <span>
-                            <strong>Diretora:</strong>
-                            Mary Harron
-                          </span>
-                        </div>
-                        <div class="col-12 col-md-6 movie-details">
-                          <span>
-                            <strong>Roteiro:</strong>
-                            Mary Harron
-                          </span>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-12 movie-details">
-                          <span>
-                            <strong>Elenco:</strong>
-                            Christian Bale, Jared Leto, Wilem Dafoe, Chloë Sevigny
-                          </span>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-12 col-sm-6 movie-details">
-                          <span>
-                            <strong>Estreia:</strong>
-                            2000
-                          </span>
-                        </div>
-                        <div class="col-12 col-sm-6 movie-details">
-                          <span>
-                            <strong>Avaliação:</strong>
-                            ★★★★★
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row" style="margin-bottom: 50px;">
-                  <div class="col-12 col-lg-6 movie-trailer" style="min-height: 290px;">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/T5IligQP7Fo"
-                      title="YouTube video player" frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen></iframe>
-                  </div>
-                  <div class="col-12 col-lg-6">
-                    <div class="row mb-2">
-                      <h4>Taxi Driver</h4>
-                    </div>
-                    <div class="row">
-                      <div class="col-12 movie-details">
-                        <span>
-                          <strong>Sinopse:</strong>
-                          Em Taxi Driver - Motorista de Táxi, Travis Bickle, 26 anos (Robert De Niro) e veterano da
-                          Guerra do Vietnã, é um homem solitário no meio da grande Nova York. Logo, ele começa a
-                          trabalhar como motorista de táxi no turno da noite, crescendo o sentimento de revolta pela
-                          miséria, o vício, a violência e a prostituição que estão sempre à sua volta. Travis começa a
-                          cogitar, então, de tomar algumas medidas drásticas para mudar esse cenário.
-                        </span>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="row">
-                        <div class="col-12 col-md-6 movie-details">
-                          <span>
-                            <strong>Diretor:</strong>
-                            Martin Scorsese
-                          </span>
-                        </div>
-                        <div class="col-12 col-md-6 movie-details">
-                          <span>
-                            <strong>Roteiro:</strong>
-                            Paul Schrader
-                          </span>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-12 movie-details">
-                          <span>
-                            <strong>Elenco:</strong>
-                            Robert De Niro, Cybill Shepherd, Peter Boyle
-                          </span>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-12 col-sm-6 movie-details">
-                          <span>
-                            <strong>Estreia:</strong>
-                            1976
-                          </span>
-                        </div>
-                        <div class="col-12 col-sm-6 movie-details">
-                          <span>
-                            <strong>Avaliação:</strong>
-                            ★★★★★
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row" style="margin-bottom: 50px;">
-                  <div class="col-12 col-lg-6 movie-trailer" style="min-height: 290px;">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dJTU48_yghs"
-                      title="YouTube video player" frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen></iframe>
-                  </div>
-                  <div class="col-12 col-lg-6">
-                    <div class="row mb-2">
-                      <h4>Her</h4>
-                    </div>
-                    <div class="row">
-                      <div class="col-12 movie-details">
-                        <span>
-                          <strong>Sinopse:</strong>
-                          O solitário escritor Theodore desenvolve uma relação de amor especial com o novo sistema
-                          operacional do seu computador. Surpreendentemente, ele acaba se apaixonando pela voz deste
-                          programa, uma entidade intuitiva e sensível chamada Samantha.
-                        </span>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="row">
-                        <div class="col-12 col-md-6 movie-details">
-                          <span>
-                            <strong>Diretor:</strong>
-                            Spike Jonze
-                          </span>
-                        </div>
-                        <div class="col-12 col-md-6 movie-details">
-                          <span>
-                            <strong>Roteiro:</strong>
-                            Spike Jonze
-                          </span>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-12 movie-details">
-                          <span>
-                            <strong>Elenco:</strong>
-                            Joaquin Phoenix, Amy Adams, Rooney Mara
-                          </span>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-12 col-sm-6 movie-details">
-                          <span>
-                            <strong>Estreia:</strong>
-                            2013
-                          </span>
-                        </div>
-                        <div class="col-12 col-sm-6 movie-details">
-                          <span>
-                            <strong>Avaliação:</strong>
-                            ★★★★★
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row" style="margin-bottom: 50px;">
-                  <div class="col-12 col-lg-6 movie-trailer" style="min-height: 290px;">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KBiOF3y1W0Y"
-                      title="YouTube video player" frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen></iframe>
-                  </div>
-                  <div class="col-12 col-lg-6">
-                    <div class="row mb-2">
-                      <h4>Drive</h4>
-                    </div>
-                    <div class="row">
-                      <div class="col-12 movie-details">
-                        <span>
-                          <strong>Sinopse:</strong>
-                          Um habilidoso motorista, que é dublê em cenas de perseguição em filmes de Hollywood, também
-                          usa seu talento no volante para ser piloto de fuga em assaltos. Seu estilo de vida solitário e
-                          misterioso começa a mudar no momento em que se apaixona por uma mulher cujo marido está
-                          prestes a sair da prisão. Enquanto isso, o chefe da sua oficina mecânica está tentando
-                          organizar uma corrida com dinheiro sujo.
-                        </span>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="row">
-                        <div class="col-12 col-md-6 movie-details">
-                          <span>
-                            <strong>Diretor:</strong>
-                            Nicolas Winding Refn
-                          </span>
-                        </div>
-                        <div class="col-12 col-md-6 movie-details">
-                          <span>
-                            <strong>Roteiro:</strong>
-                            Hossein Amini
-                          </span>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-12 movie-details">
-                          <span>
-                            <strong>Elenco:</strong>
-                            Ryan Gosling, Carey Mulligan, Bryan Cranston
-                          </span>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-12 col-sm-6 movie-details">
-                          <span>
-                            <strong>Estreia:</strong>
-                            2011
-                          </span>
-                        </div>
-                        <div class="col-12 col-sm-6 movie-details">
-                          <span>
-                            <strong>Avaliação:</strong>
-                            ★★★★★
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+  <body class="bg-black text-light">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark container">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/sigma.png" alt="Sigma Box Logo" />
+            Sigma Box
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#releases"
+                  >lançamentos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#featured"
+                  >em destaque</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#reviews">reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#interviews"
+                  >entrevistas & making-of</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#new">novidades</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <input
+                class="form-control me-2 dark"
+                type="search"
+                placeholder="Pesquisar filmes"
+                aria-label="Pesquisar"
+              />
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="row" id="featured">
-      <div class="container">
-        <div class="row">
-          <div class="col-6">
-            <h2 class="mb-5">Em destaque</h2>
-          </div>
-          <div class="col-6">
-            <div class="dropdown" style="text-align: right;">
-              <a class="btn btn-dark dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Categoria: TODOS
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Drama</a></li>
-                <li><a class="dropdown-item" href="#">Policial</a></li>
-                <li><a class="dropdown-item" href="#">Romance</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container" style="text-align: center;">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 mb-4" style="border: none">
-            <div class="movie-poster card" style="border-radius: 10px; border: 1px solid #333">
-              <img
-                src="https://a.ltrbxd.com/resized/film-poster/5/1/5/6/8/51568-fight-club-0-230-0-345-crop.jpg?k=953911821b"
-                alt="">
-              <div class="title">
-                <b>Clube da Luta</b>
-              </div>
-              <div class="vignette"></div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4">
-            <div class="movie-poster card" style="border-radius: 10px; border: 1px solid #333">
-              <img
-                src="https://a.ltrbxd.com/resized/sm/upload/zt/zd/oi/0f/ekstpH614fwDX8DUln1a2Opz0N8-0-230-0-345-crop.jpg?k=ed45fb6b9f"
-                alt="">
-              <div class="title">
-                <b>Taxi Driver</b>
-              </div>
-              <div class="vignette"></div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4">
-            <div class="movie-poster card" style="border-radius: 10px; border: 1px solid #333">
-              <img
-                src="https://a.ltrbxd.com/resized/film-poster/4/3/3/8/6/3/433863-the-lighthouse-0-230-0-345-crop.jpg?k=c87f4236bb"
-                alt="">
-              <div class="title">
-                <b>O Farol</b>
-              </div>
-              <div class="vignette"></div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="movie-poster card" style="border-radius: 10px; border: 1px solid #333">
-              <img
-                src="https://a.ltrbxd.com/resized/sm/upload/6d/6l/r3/e9/nu7XIa67cXc2t7frXCE5voXUJcN.jpg-0-230-0-345-crop.jpg?k=99387734db"
-                alt="">
-              <div class="title">
-                <b>Drive</b>
-              </div>
-              <div class="vignette"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-4">
-          <div class="col-12" style="text-align: right;">
-            <button type="button" class="btn btn-dark btn-sm" onclick="alert('Ainda em desenvolvimento')">
-              + Carregar mais filmes
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="row" id="reviews">
-      <div class="container">
-        <div class="row">
-          <h2 class="mb-5">Últimos reviews</h2>
-        </div>
-        <div class="row" style="text-align: center;">
-          <div class="col-md-4 col-sm-12 mb-4">
-            <div class="row">
-              <div class="col-3">
-                <div>
-                  <img class="avatar" src="assets/icons/user.svg">
-                </div>
-                <span>Gabriel</span>
-              </div>
-              <div class="col-9" style="text-align: left;">
-                <h6>Laranja Mecânica</h6>
-                <div>★★★★☆ - 19/04/2022</div>
-                <div>
-                  <span>Muito interessante e engraçado</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12 mb-4">
-            <div class="row">
-              <div class="col-3">
-                <div>
-                  <img class="avatar" src="assets/icons/user.svg">
-                </div>
-                <span>Marco</span>
-              </div>
-              <div class="col-9" style="text-align: left;">
-                <h6>O Virgem de 40 Anos</h6>
-                <div>★★★☆☆ - 18/04/2022</div>
-                <div>Literalmente eu</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12 mb-4">
-            <div class="row">
-              <div class="col-3">
-                <div>
-                  <img class="avatar" src="assets/icons/user.svg">
-                </div>
-                <span>Paulo</span>
-              </div>
-              <div class="col-9" style="text-align: left;">
-                <h6>Drive</h6>
-                <div>★★★★★ - 16/04/2022</div>
-                <div>Quero ser padrasto</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="row" id="interviews">
-      <div class="container">
-        <div class="row">
-          <h2 class="mb-5">Entrevistas & Making-of</h2>
-        </div>
-        <div class="row">
-          <div class="col-md-12 col-lg-4 interview-container">
-            <div class="row">
-              <iframe width="560" height="250" src="https://www.youtube.com/embed/TO6a_5e5M3U"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-            <div class="row mt-4">
-              <div class="row">
-                <h4>The Batman (2022)</h4>
-              </div>
-              <div class="row">
-                <div class="col-12">
-                  <span>
-                    <strong>Diretor:</strong>
-                    Matt Reeves
-                  </span>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
-                  <span>
-                    <strong>Roteiro: </strong>
-                    Matt Reeves, Peter Craig
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12 col-lg-4 interview-container">
-            <div class="row">
-              <iframe width="560" height="250" src="https://www.youtube.com/embed/On8S4X_j5Io"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-            <div class="row mt-4">
-              <div class="row">
-                <h4>The Batman (2022)</h4>
-              </div>
-              <div class="row">
-                <div class="col-12">
-                  <span>
-                    <strong>Diretor:</strong>
-                    Matt Reeves
-                  </span>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
-                  <span>
-                    <strong>Roteiro: </strong>
-                    Matt Reeves, Peter Craig
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12 col-lg-4 interview-container">
-            <div class="row">
-              <iframe width="560" height="250" src="https://www.youtube.com/embed/GrsJDy8VjZk"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-            <div class="row mt-4">
-              <div class="row">
-                <h4>Django Livre (2012)</h4>
-              </div>
-              <div class="row">
-                <div class="col-12">
-                  <span>
-                    <strong>Diretor:</strong>
-                    Quentin Tarantino
-                  </span>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
-                  <span>
-                    <strong>Roteiro:</strong>
-                    Quentin Tarantino
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="row mt-3" id="new">
-      <div class="container col-md-12 col-lg-8">
-        <div class="row mb-5">
-          <h2>Novidades</h2>
-        </div>
-        <div class="row article-preview">
-          <div class="col-12 col-md-4 article-thumbnail">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BZTdmZDliMmEtMTIxMi00Mzk5LTg2MDItMTRhYTk1MzlmYjViXkEyXkFqcGdeQWplZmZscA@@._V1_.jpg"
-              alt="">
-          </div>
-          <div class="col-12 col-md-8">
-            <div class="row">
-              <h4>Você com certeza se identificará com esses personagens</h4>
-            </div>
-            <div class="row">
-              <article>
-                <span>
-                  Venha ver se você se identifica com algum desses personagens
-                </span>
-              </article>
-            </div>
-            <div class="row mt-2">
-              <div class="chips">
-                <div class="chip">ryan gosling</div>
-                <div class="chip">sigma male</div>
-                <div class="chip">engraçado</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row article-preview">
-          <div class="col-12 col-md-4 article-thumbnail">
-            <img src="https://64.media.tumblr.com/d141c5349c717f801bfe4e00bfc5d9d6/tumblr_p63ulojwJy1rf1yd3o9_1280.jpg"
-              alt="">
-          </div>
-          <div class="col-12 col-md-8">
-            <div class="row">
-              <h4>Qual o sentido da torradeira em Pulp Fiction?</h4>
-            </div>
-            <div class="row">
-              <article>
-                <span>
-                  Uma torradeira em um filme de Quentin Tarantino pode esconder muitos segredos
-                </span>
-              </article>
-            </div>
-            <div class="row mt-2">
-              <div class="chips">
-                <div class="chip">hollywood</div>
-                <div class="chip">tarantino</div>
-                <div class="chip">curiosidades</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row article-preview">
-          <div class="col-12 col-md-4 article-thumbnail">
-            <img src="https://m.media-amazon.com/images/M/MV5BNjE3ODc3NTk0N15BMl5BanBnXkFtZTgwNzkwNjM3MDE@._V1_.jpg"
-              alt="">
-          </div>
-          <div class="col-12 col-md-8">
-            <div class="row">
-              <h4>Her e a solidão</h4>
-            </div>
-            <div class="row">
-              <article>
-                <span>
-                  A solidão é muito bem representada por Joaquin Phoenix e Spike Jonze em Her, de 2013
-                </span>
-              </article>
-            </div>
-            <div class="row mt-2">
-              <div class="chips">
-                <div class="chip">hollywood</div>
-                <div class="chip">oscar</div>
-                <div class="chip">sigma male</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <aside class="col-md-12 col-lg-4">
-        <div class="row mb-5">
-          <div class="row mb-3">
-            <h4>Sobre</h4>
-          </div>
-          <article class="row">
-            <span>
-              O Sigma Box é o melhor site de reviews de filmes. Ache, avalie e comente sobre filmes junto com outras
-              pessoas!
-            </span>
-          </article>
-        </div>
-        <div class="row">
+      </nav>
+    </header>
+    <main class="container my-5 bg-black">
+      <section class="row" id="releases">
+        <h2 class="text-center mb-5">Lançamentos</h2>
+        <div class="container">
           <div class="row">
-            <h4 class="mb-3">Editorial</h4>
-          </div>
-          <div class="row ms-1">
-            <div class="row">
-              <span>
-                <span class="fs-6 fw-bolder">Redação:</span>
-                Vinicius Lima
-              </span>
-            </div>
-            <div class="row">
-              <span>
-                <span class="fs-6 fw-bolder">Pesquisa:</span>
-                Vinicius Lima
-              </span>
-            </div>
-            <div class="row">
-              <span>
-                <span class="fs-6 fw-bolder">Gerente Geral:</span>
-                Vinicius Lima
-              </span>
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide carousel-light"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="3"
+                  aria-label="Slide 4"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row" style="margin-bottom: 50px">
+                    <div
+                      class="col-12 col-lg-6 movie-trailer"
+                      style="min-height: 290px"
+                    >
+                      <iframe
+                        width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/81mibtQWWBg"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                      <div class="row mb-2">
+                        <h4>Psicopata Americano</h4>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 movie-details">
+                          <span>
+                            <strong>Sinopse:</strong>
+                            Em Nova York, em 1987, o belo jovem profissional
+                            Patrick Bateman tem uma segunda vida como um
+                            horrível assassino em série durante a noite. O
+                            elenco é formado pelo detetive, a noiva, a amante, o
+                            colega de trabalho e a secretária. Esta é uma
+                            comédia de humor seco que examina os elementos que
+                            transformam um homem em um monstro.
+                          </span>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="row">
+                          <div class="col-12 col-md-6 movie-details">
+                            <span>
+                              <strong>Diretora:</strong>
+                              Mary Harron
+                            </span>
+                          </div>
+                          <div class="col-12 col-md-6 movie-details">
+                            <span>
+                              <strong>Roteiro:</strong>
+                              Mary Harron
+                            </span>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12 movie-details">
+                            <span>
+                              <strong>Elenco:</strong>
+                              Christian Bale, Jared Leto, Wilem Dafoe, Chloë
+                              Sevigny
+                            </span>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12 col-sm-6 movie-details">
+                            <span>
+                              <strong>Estreia:</strong>
+                              2000
+                            </span>
+                          </div>
+                          <div class="col-12 col-sm-6 movie-details">
+                            <span>
+                              <strong>Avaliação:</strong>
+                              ★★★★★
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row" style="margin-bottom: 50px">
+                    <div
+                      class="col-12 col-lg-6 movie-trailer"
+                      style="min-height: 290px"
+                    >
+                      <iframe
+                        width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/T5IligQP7Fo"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                      <div class="row mb-2">
+                        <h4>Taxi Driver</h4>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 movie-details">
+                          <span>
+                            <strong>Sinopse:</strong>
+                            Em Taxi Driver - Motorista de Táxi, Travis Bickle,
+                            26 anos (Robert De Niro) e veterano da Guerra do
+                            Vietnã, é um homem solitário no meio da grande Nova
+                            York. Logo, ele começa a trabalhar como motorista de
+                            táxi no turno da noite, crescendo o sentimento de
+                            revolta pela miséria, o vício, a violência e a
+                            prostituição que estão sempre à sua volta. Travis
+                            começa a cogitar, então, de tomar algumas medidas
+                            drásticas para mudar esse cenário.
+                          </span>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="row">
+                          <div class="col-12 col-md-6 movie-details">
+                            <span>
+                              <strong>Diretor:</strong>
+                              Martin Scorsese
+                            </span>
+                          </div>
+                          <div class="col-12 col-md-6 movie-details">
+                            <span>
+                              <strong>Roteiro:</strong>
+                              Paul Schrader
+                            </span>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12 movie-details">
+                            <span>
+                              <strong>Elenco:</strong>
+                              Robert De Niro, Cybill Shepherd, Peter Boyle
+                            </span>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12 col-sm-6 movie-details">
+                            <span>
+                              <strong>Estreia:</strong>
+                              1976
+                            </span>
+                          </div>
+                          <div class="col-12 col-sm-6 movie-details">
+                            <span>
+                              <strong>Avaliação:</strong>
+                              ★★★★★
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row" style="margin-bottom: 50px">
+                    <div
+                      class="col-12 col-lg-6 movie-trailer"
+                      style="min-height: 290px"
+                    >
+                      <iframe
+                        width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/dJTU48_yghs"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                      <div class="row mb-2">
+                        <h4>Her</h4>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 movie-details">
+                          <span>
+                            <strong>Sinopse:</strong>
+                            O solitário escritor Theodore desenvolve uma relação
+                            de amor especial com o novo sistema operacional do
+                            seu computador. Surpreendentemente, ele acaba se
+                            apaixonando pela voz deste programa, uma entidade
+                            intuitiva e sensível chamada Samantha.
+                          </span>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="row">
+                          <div class="col-12 col-md-6 movie-details">
+                            <span>
+                              <strong>Diretor:</strong>
+                              Spike Jonze
+                            </span>
+                          </div>
+                          <div class="col-12 col-md-6 movie-details">
+                            <span>
+                              <strong>Roteiro:</strong>
+                              Spike Jonze
+                            </span>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12 movie-details">
+                            <span>
+                              <strong>Elenco:</strong>
+                              Joaquin Phoenix, Amy Adams, Rooney Mara
+                            </span>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12 col-sm-6 movie-details">
+                            <span>
+                              <strong>Estreia:</strong>
+                              2013
+                            </span>
+                          </div>
+                          <div class="col-12 col-sm-6 movie-details">
+                            <span>
+                              <strong>Avaliação:</strong>
+                              ★★★★★
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row" style="margin-bottom: 50px">
+                    <div
+                      class="col-12 col-lg-6 movie-trailer"
+                      style="min-height: 290px"
+                    >
+                      <iframe
+                        width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/KBiOF3y1W0Y"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                      <div class="row mb-2">
+                        <h4>Drive</h4>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 movie-details">
+                          <span>
+                            <strong>Sinopse:</strong>
+                            Um habilidoso motorista, que é dublê em cenas de
+                            perseguição em filmes de Hollywood, também usa seu
+                            talento no volante para ser piloto de fuga em
+                            assaltos. Seu estilo de vida solitário e misterioso
+                            começa a mudar no momento em que se apaixona por uma
+                            mulher cujo marido está prestes a sair da prisão.
+                            Enquanto isso, o chefe da sua oficina mecânica está
+                            tentando organizar uma corrida com dinheiro sujo.
+                          </span>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="row">
+                          <div class="col-12 col-md-6 movie-details">
+                            <span>
+                              <strong>Diretor:</strong>
+                              Nicolas Winding Refn
+                            </span>
+                          </div>
+                          <div class="col-12 col-md-6 movie-details">
+                            <span>
+                              <strong>Roteiro:</strong>
+                              Hossein Amini
+                            </span>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12 movie-details">
+                            <span>
+                              <strong>Elenco:</strong>
+                              Ryan Gosling, Carey Mulligan, Bryan Cranston
+                            </span>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12 col-sm-6 movie-details">
+                            <span>
+                              <strong>Estreia:</strong>
+                              2011
+                            </span>
+                          </div>
+                          <div class="col-12 col-sm-6 movie-details">
+                            <span>
+                              <strong>Avaliação:</strong>
+                              ★★★★★
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="row mt-5" style="text-align: center;">
-          <div class="col-4">
-            <a href="#"><img src="assets/icons/facebook.svg" alt="" width="30" class="social-media"></a>
-          </div>
-          <div class="col-4">
-            <a href="#"><img src="assets/icons/instagram.svg" alt="" width="30" class="social-media"></a>
-          </div>
-          <div class="col-4">
-            <a href="#"><img src="assets/icons/twitter.svg" alt="" width="30" class="social-media"></a>
+      </section>
+      <section class="row" id="featured">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h2 class="mb-5">Em destaque</h2>
+            </div>
+            <div class="col-6">
+              <div class="dropdown" style="text-align: right">
+                <a
+                  class="btn btn-dark dropdown-toggle"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categoria: TODOS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Drama</a></li>
+                  <li><a class="dropdown-item" href="#">Policial</a></li>
+                  <li><a class="dropdown-item" href="#">Romance</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-      </aside>
-    </section>
-  </main>
-  <footer class="bg-black text-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-9">
-          © 2022 - Disciplina de Desenvolvimento de Interfaces Web - ICEI PUC Minas
+        <div class="container" style="text-align: center">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4" style="border: none">
+              <div
+                class="movie-poster card"
+                style="border-radius: 10px; border: 1px solid #333"
+              >
+                <img
+                  src="https://a.ltrbxd.com/resized/film-poster/5/1/5/6/8/51568-fight-club-0-230-0-345-crop.jpg?k=953911821b"
+                  alt=""
+                />
+                <div class="title">
+                  <b>Clube da Luta</b>
+                </div>
+                <div class="vignette"></div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div
+                class="movie-poster card"
+                style="border-radius: 10px; border: 1px solid #333"
+              >
+                <img
+                  src="https://a.ltrbxd.com/resized/sm/upload/zt/zd/oi/0f/ekstpH614fwDX8DUln1a2Opz0N8-0-230-0-345-crop.jpg?k=ed45fb6b9f"
+                  alt=""
+                />
+                <div class="title">
+                  <b>Taxi Driver</b>
+                </div>
+                <div class="vignette"></div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div
+                class="movie-poster card"
+                style="border-radius: 10px; border: 1px solid #333"
+              >
+                <img
+                  src="https://a.ltrbxd.com/resized/film-poster/4/3/3/8/6/3/433863-the-lighthouse-0-230-0-345-crop.jpg?k=c87f4236bb"
+                  alt=""
+                />
+                <div class="title">
+                  <b>O Farol</b>
+                </div>
+                <div class="vignette"></div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div
+                class="movie-poster card"
+                style="border-radius: 10px; border: 1px solid #333"
+              >
+                <img
+                  src="https://a.ltrbxd.com/resized/sm/upload/6d/6l/r3/e9/nu7XIa67cXc2t7frXCE5voXUJcN.jpg-0-230-0-345-crop.jpg?k=99387734db"
+                  alt=""
+                />
+                <div class="title">
+                  <b>Drive</b>
+                </div>
+                <div class="vignette"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12" style="text-align: right">
+              <button
+                type="button"
+                class="btn btn-dark btn-sm"
+                onclick="alert('Ainda em desenvolvimento')"
+              >
+                + Carregar mais filmes
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="col-3" style="text-align: right;">
-          LOGO
+      </section>
+      <section class="row" id="reviews">
+        <div class="container">
+          <div class="row">
+            <h2 class="mb-5">Últimos reviews</h2>
+          </div>
+          <div class="row" style="text-align: center">
+            <div class="col-md-4 col-sm-12 mb-4">
+              <div class="row">
+                <div class="col-3">
+                  <div>
+                    <img class="avatar" src="assets/icons/user.svg" />
+                  </div>
+                  <span>Gabriel</span>
+                </div>
+                <div class="col-9" style="text-align: left">
+                  <h6>Laranja Mecânica</h6>
+                  <div>★★★★☆ - 19/04/2022</div>
+                  <div>
+                    <span>Muito interessante e engraçado</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-4">
+              <div class="row">
+                <div class="col-3">
+                  <div>
+                    <img class="avatar" src="assets/icons/user.svg" />
+                  </div>
+                  <span>Marco</span>
+                </div>
+                <div class="col-9" style="text-align: left">
+                  <h6>O Virgem de 40 Anos</h6>
+                  <div>★★★☆☆ - 18/04/2022</div>
+                  <div>Literalmente eu</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-4">
+              <div class="row">
+                <div class="col-3">
+                  <div>
+                    <img class="avatar" src="assets/icons/user.svg" />
+                  </div>
+                  <span>Paulo</span>
+                </div>
+                <div class="col-9" style="text-align: left">
+                  <h6>Drive</h6>
+                  <div>★★★★★ - 16/04/2022</div>
+                  <div>Quero ser padrasto</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="row" id="interviews">
+        <div class="container">
+          <div class="row">
+            <h2 class="mb-5">Entrevistas & Making-of</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-lg-4 interview-container">
+              <div class="row">
+                <iframe
+                  width="560"
+                  height="250"
+                  src="https://www.youtube.com/embed/TO6a_5e5M3U"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="row mt-4">
+                <div class="row">
+                  <h4>The Batman (2022)</h4>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <span>
+                      <strong>Diretor:</strong>
+                      Matt Reeves
+                    </span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <span>
+                      <strong>Roteiro: </strong>
+                      Matt Reeves, Peter Craig
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-4 interview-container">
+              <div class="row">
+                <iframe
+                  width="560"
+                  height="250"
+                  src="https://www.youtube.com/embed/On8S4X_j5Io"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="row mt-4">
+                <div class="row">
+                  <h4>The Batman (2022)</h4>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <span>
+                      <strong>Diretor:</strong>
+                      Matt Reeves
+                    </span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <span>
+                      <strong>Roteiro: </strong>
+                      Matt Reeves, Peter Craig
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-4 interview-container">
+              <div class="row">
+                <iframe
+                  width="560"
+                  height="250"
+                  src="https://www.youtube.com/embed/GrsJDy8VjZk"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="row mt-4">
+                <div class="row">
+                  <h4>Django Livre (2012)</h4>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <span>
+                      <strong>Diretor:</strong>
+                      Quentin Tarantino
+                    </span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <span>
+                      <strong>Roteiro:</strong>
+                      Quentin Tarantino
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="row mt-3" id="new">
+        <div class="container col-md-12 col-lg-8">
+          <div class="row mb-5">
+            <h2>Novidades</h2>
+          </div>
+          <div class="row article-preview">
+            <div class="col-12 col-md-4 article-thumbnail">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BZTdmZDliMmEtMTIxMi00Mzk5LTg2MDItMTRhYTk1MzlmYjViXkEyXkFqcGdeQWplZmZscA@@._V1_.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-12 col-md-8">
+              <div class="row">
+                <h4>Você com certeza se identificará com esses personagens</h4>
+              </div>
+              <div class="row">
+                <article>
+                  <span>
+                    Venha ver se você se identifica com algum desses personagens
+                  </span>
+                </article>
+              </div>
+              <div class="row mt-2">
+                <div class="chips">
+                  <div class="chip">ryan gosling</div>
+                  <div class="chip">sigma male</div>
+                  <div class="chip">engraçado</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row article-preview">
+            <div class="col-12 col-md-4 article-thumbnail">
+              <img
+                src="https://64.media.tumblr.com/d141c5349c717f801bfe4e00bfc5d9d6/tumblr_p63ulojwJy1rf1yd3o9_1280.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-12 col-md-8">
+              <div class="row">
+                <h4>Qual o sentido da torradeira em Pulp Fiction?</h4>
+              </div>
+              <div class="row">
+                <article>
+                  <span>
+                    Uma torradeira em um filme de Quentin Tarantino pode
+                    esconder muitos segredos
+                  </span>
+                </article>
+              </div>
+              <div class="row mt-2">
+                <div class="chips">
+                  <div class="chip">hollywood</div>
+                  <div class="chip">tarantino</div>
+                  <div class="chip">curiosidades</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row article-preview">
+            <div class="col-12 col-md-4 article-thumbnail">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BNjE3ODc3NTk0N15BMl5BanBnXkFtZTgwNzkwNjM3MDE@._V1_.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-12 col-md-8">
+              <div class="row">
+                <h4>Her e a solidão</h4>
+              </div>
+              <div class="row">
+                <article>
+                  <span>
+                    A solidão é muito bem representada por Joaquin Phoenix e
+                    Spike Jonze em Her, de 2013
+                  </span>
+                </article>
+              </div>
+              <div class="row mt-2">
+                <div class="chips">
+                  <div class="chip">hollywood</div>
+                  <div class="chip">oscar</div>
+                  <div class="chip">sigma male</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <aside class="col-md-12 col-lg-4">
+          <div class="row mb-5">
+            <div class="row mb-3">
+              <h4>Sobre</h4>
+            </div>
+            <article class="row">
+              <span>
+                O Sigma Box é o melhor site de reviews de filmes. Ache, avalie e
+                comente sobre filmes junto com outras pessoas!
+              </span>
+            </article>
+          </div>
+          <div class="row">
+            <div class="row">
+              <h4 class="mb-3">Editorial</h4>
+            </div>
+            <div class="row ms-1">
+              <div class="row">
+                <span>
+                  <span class="fs-6 fw-bolder">Redação:</span>
+                  Vinicius Lima
+                </span>
+              </div>
+              <div class="row">
+                <span>
+                  <span class="fs-6 fw-bolder">Pesquisa:</span>
+                  Vinicius Lima
+                </span>
+              </div>
+              <div class="row">
+                <span>
+                  <span class="fs-6 fw-bolder">Gerente Geral:</span>
+                  Vinicius Lima
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5" style="text-align: center">
+            <div class="col-4">
+              <a href="#"
+                ><img
+                  src="assets/icons/facebook.svg"
+                  alt=""
+                  width="30"
+                  class="social-media"
+              /></a>
+            </div>
+            <div class="col-4">
+              <a href="#"
+                ><img
+                  src="assets/icons/instagram.svg"
+                  alt=""
+                  width="30"
+                  class="social-media"
+              /></a>
+            </div>
+            <div class="col-4">
+              <a href="#"
+                ><img
+                  src="assets/icons/twitter.svg"
+                  alt=""
+                  width="30"
+                  class="social-media"
+              /></a>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <footer class="bg-black text-light">
+      <div class="container">
+        <div class="row d-flex flex-row align-items-center">
+          <div class="col-9">
+            © 2022 - Disciplina de Desenvolvimento de Interfaces Web - ICEI PUC
+            Minas
+          </div>
+          <div class="col-3" style="text-align: right">
+            <img src="assets/img/sigma.png" alt="Sigma Box Logo" />
+            Sigma Box
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-</body>
-
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
