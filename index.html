@@ -13,6 +13,13 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Sigma Box</title>
   </head>
 
@@ -38,7 +45,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#releases"
+                <a class="nav-link" aria-current="page" href="#releases"
                   >lançamentos</a
                 >
               </li>
@@ -59,16 +66,26 @@
                 <a class="nav-link" href="#new">novidades</a>
               </li>
             </ul>
-            <div class="autocomplete">
-              <input
-                class="form-control me-2 dark"
-                type="search"
-                placeholder="Pesquisar filmes, atores, séries..."
-                aria-label="Pesquisar"
-                id="search"
-              />
+            <form id="search-form" class="autocomplete">
+              <div class="input-group">
+                <input
+                  class="form-control dark"
+                  type="search"
+                  placeholder="Pesquisar filmes, atores, séries..."
+                  aria-label="Pesquisar"
+                  id="search"
+                />
+                <button
+                  class="btn btn-outline-secondary"
+                  type="button"
+                  aria-label="Pesquisar"
+                  id="search-btn"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
               <div class="ac-items"></div>
-            </div>
+            </form>
           </div>
         </div>
       </nav>

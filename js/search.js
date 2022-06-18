@@ -1,11 +1,20 @@
 import api from './api.js';
 
+const searchForm = document.getElementById('search-form');
 const searchInput = document.getElementById('search');
+const searchBtn = document.getElementById('search-btn');
 const listDiv = document.querySelector('.ac-items');
 
 let results = [];
 
-const showResults = () => {
+let loading = false;
+
+const search = () => {
+  if (loading || !results.length) return;
+  location.href = `pesquisa.html?query=${searchInput.value}&page=1`;
+};
+
+const autoComplete = () => {
   listDiv.innerHTML = null;
 
   if (!results.length || results[0].error) {
@@ -26,7 +35,13 @@ const showResults = () => {
   });
 };
 
-let loading = false;
+searchForm.addEventListener('submit', e => {
+  e.preventDefault();
+  search();
+});
+
+searchBtn.addEventListener('click', search);
+
 let debounce = null;
 searchInput.addEventListener('input', () => {
   if (debounce) clearTimeout(debounce);
@@ -71,7 +86,7 @@ searchInput.addEventListener('input', () => {
         results = [{ error: 'Ocorreu um erro ao buscar os filmes' }];
       })
       .finally(() => {
-        showResults();
+        autoComplete();
         loading = false;
       });
   }, 1000);
