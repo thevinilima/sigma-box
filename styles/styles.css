@@ -1,6 +1,6 @@
 ::selection {
   background-color: #ccc !important;
-  color: black !important;
+  color: #000 !important;
 }
 
 ::-webkit-scrollbar {
@@ -18,6 +18,13 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+.spinner-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px initial;
 }
 
 nav input {

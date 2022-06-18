@@ -2,25 +2,18 @@ import api from './api.js';
 
 const searchForm = document.getElementById('search-form');
 const searchInput = document.getElementById('search');
-const searchBtn = document.getElementById('search-btn');
 const listDiv = document.querySelector('.ac-items');
 
 let results = [];
 
 let loading = false;
 
-const search = () => {
-  if (loading || !results.length) return;
-  location.href = `pesquisa.html?query=${searchInput.value}&page=1`;
-};
-
 const autoComplete = () => {
   listDiv.innerHTML = null;
 
-  if (!results.length || results[0].error) {
+  if (!results.length) {
     const messageDiv = document.createElement('div');
-    const message =
-      (results[0] && results[0].error) || 'Nenhum resultado encontrado';
+    const message = 'Nenhum resultado encontrado';
     messageDiv.innerText = message;
     messageDiv.classList.add('search-warning');
     listDiv.appendChild(messageDiv);
@@ -37,10 +30,9 @@ const autoComplete = () => {
 
 searchForm.addEventListener('submit', e => {
   e.preventDefault();
-  search();
+  if (loading || !results.length) return;
+  location.href = `pesquisa.html?query=${searchInput.value}&page=1`;
 });
-
-searchBtn.addEventListener('click', search);
 
 let debounce = null;
 searchInput.addEventListener('input', () => {
@@ -50,6 +42,7 @@ searchInput.addEventListener('input', () => {
   if (!query) {
     listDiv.innerHTML = null;
     loading = false;
+    if (debounce) clearTimeout(debounce);
     return;
   }
 
@@ -81,12 +74,15 @@ searchInput.addEventListener('input', () => {
       })
       .then(res => {
         results = res.data.results;
+        autoComplete();
       })
       .catch(() => {
-        results = [{ error: 'Ocorreu um erro ao buscar os filmes' }];
+        const messageDiv = document.createElement('div');
+        messageDiv.innerText = 'Ocorreu um erro na pesquisa';
+        listEl.innerHTML = null;
+        listEl.appendChild(messageDiv);
       })
       .finally(() => {
-        autoComplete();
         loading = false;
       });
   }, 1000);
