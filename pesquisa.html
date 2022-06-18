@@ -91,7 +91,22 @@
       </nav>
     </header>
     <main class="container mb-5 bg-black">
+      <div class="w-100 p-3 d-flex justify-content-between">
+        <h3>Resultados</h3>
+        <span id="total-results"></span>
+      </div>
       <section class="list"></section>
+      <nav>
+        <div class="d-flex align-items-center justify-content-between p-3">
+          <button id="prev-page">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <span id="page-count"></span>
+          <button id="next-page">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </nav>
     </main>
     <footer class="bg-black text-light">
       <div class="container">

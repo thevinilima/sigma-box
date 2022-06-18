@@ -30,7 +30,6 @@ const autoComplete = () => {
 
 searchForm.addEventListener('submit', e => {
   e.preventDefault();
-  if (loading || !results.length) return;
   location.href = `pesquisa.html?query=${searchInput.value}&page=1`;
 });
 
