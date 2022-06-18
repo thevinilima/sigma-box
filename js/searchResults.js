@@ -75,8 +75,14 @@ const listResult = () => {
 
     const posterDiv = document.createElement('div');
     posterDiv.classList.add('poster');
-    const poster = document.createElement('img');
-    poster.src = IMG_BASE_URL + (results.poster_path || results.profile_path);
+    let poster = null;
+    if (results.poster_path || results.profile_path) {
+      poster = document.createElement('img');
+      poster.src = IMG_BASE_URL + (results.poster_path || results.profile_path);
+    } else {
+      poster = document.createElement('i');
+      poster.classList.add('fa-solid', 'fa-question', 'fa-3x');
+    }
     posterDiv.appendChild(poster);
 
     const detailsDiv = document.createElement('div');
@@ -91,7 +97,7 @@ const listResult = () => {
 
     const descDiv = document.createElement('div');
     descDiv.classList.add('desc');
-    descDiv.innerText = results.overview;
+    descDiv.innerText = results.overview || '';
     detailsDiv.appendChild(descDiv);
 
     const chipsDiv = document.createElement('div');

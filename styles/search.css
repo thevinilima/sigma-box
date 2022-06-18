@@ -17,6 +17,13 @@ main {
   overflow: hidden;
 }
 
+.poster {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+}
+
 .details {
   padding: 10px 20px;
 }
