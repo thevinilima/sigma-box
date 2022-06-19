@@ -16,6 +16,20 @@
   border-radius: 10px;
 }
 
+#basic-data {
+  display: flex;
+  align-items: center;
+}
+
+#basic-data > * {
+  width: auto;
+}
+
+#year {
+  font-weight: 300;
+  font-size: 0.9em;
+}
+
 .chip {
   margin-right: 10px;
 }

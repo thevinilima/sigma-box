@@ -69,6 +69,10 @@ const showDetails = () => {
     details.name ||
     details.original_name;
 
+  const year = document.getElementById('year');
+  const dateStr = details.release_date || details.first_air_date;
+  year.innerText = dateStr.split('-')[0];
+
   const descDiv = document.getElementById('desc');
   descDiv.innerText = details.overview || '';
 
@@ -103,13 +107,16 @@ const showCredits = () => {
   const actorsNames = document.querySelectorAll('#cast .actor .actor-name');
   const actorsRoles = document.querySelectorAll('#cast .actor .actor-role');
   const cast = credits.cast;
-  cast.forEach((actor, index) => {
-    actorsContainers[index].classList.remove('hidden');
+  actorsContainers.forEach((container, index) => {
+    if (!cast[index]) return;
+    container.classList.remove('hidden');
     let imgSource = '';
-    if (actor.profile_path) imgSource = IMG_BASE_URL + actor.profile_path;
+    if (cast[index].profile_path)
+      imgSource = IMG_BASE_URL + cast[index].profile_path;
     else imgSource = 'assets/icons/user.svg';
     actorsImgs[index].src = imgSource;
-    actorsNames[index].innerText = actor.name || actor.original_name;
-    actorsRoles[index].innerText = actor.character;
+    actorsNames[index].innerText =
+      cast[index].name || cast[index].original_name;
+    actorsRoles[index].innerText = cast[index].character;
   });
 };
