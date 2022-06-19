@@ -84,14 +84,15 @@ const fetchCredits = () => {
 };
 
 const showCredits = () => {
+  const actorsContainers = document.querySelectorAll('#cast .actor');
   const actorsImgs = document.querySelectorAll('#cast .actor img');
   const actorsNames = document.querySelectorAll('#cast .actor .actor-name');
   const actorsRoles = document.querySelectorAll('#cast .actor .actor-role');
   const cast = credits.cast;
-  actorsImgs.forEach((actorImg, index) => {
-    actorImg.src = IMG_BASE_URL + cast[index].profile_path;
-    actorsNames[index].innerText =
-      cast[index].name || cast[index].original_name;
-    actorsRoles[index].innerText = cast[index].character;
+  cast.forEach((actor, index) => {
+    actorsContainers[index].classList.remove('hidden');
+    actorsImgs[index].src = IMG_BASE_URL + actor.profile_path;
+    actorsNames[index].innerText = actor.name || actor.original_name;
+    actorsRoles[index].innerText = actor.character;
   });
 };
