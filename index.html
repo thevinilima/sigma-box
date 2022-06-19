@@ -52,9 +52,9 @@
                 </a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" aria-current="page" href="#trending">
-                  <i class="fa-solid fa-fire"></i>
-                  lançamentos
+                <a class="nav-link" aria-current="page" href="#playing">
+                  <i class="fa-solid fa-clapperboard"></i>
+                  em cartaz
                 </a>
               </li>
               <li class="nav-item mx-2">
@@ -92,11 +92,19 @@
       <section class="row" id="trending">
         <h2>Em alta nessa semana</h2>
         <div class="container">
-          <div class="row my-4">
-            <div class="col-lg-3 col-md-6 mb-4">
+          <div class="spinner-container">
+            <div class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+          <div class="row my-2">
+            <div class="col-lg-3 col-md-6 my-3">
               <div class="movie-poster card">
                 <img src="" alt="" />
-                <div class="type chip"></div>
+                <div class="type chip">
+                  <i class="fa-solid"></i>
+                  <span></span>
+                </div>
                 <div class="rating chip">
                   <i class="fa-solid fa-star"></i>
                   <span></span>
@@ -113,10 +121,13 @@
                 <div class="vignette"></div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-4">
+            <div class="col-lg-3 col-md-6 my-3">
               <div class="movie-poster card">
                 <img src="" alt="" />
-                <div class="type chip"></div>
+                <div class="type chip">
+                  <i class="fa-solid"></i>
+                  <span></span>
+                </div>
                 <div class="rating chip">
                   <i class="fa-solid fa-star"></i>
                   <span></span>
@@ -133,10 +144,13 @@
                 <div class="vignette"></div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-4">
+            <div class="col-lg-3 col-md-6 my-3">
               <div class="movie-poster card">
                 <img src="" alt="" />
-                <div class="type chip"></div>
+                <div class="type chip">
+                  <i class="fa-solid"></i>
+                  <span></span>
+                </div>
                 <div class="rating chip">
                   <i class="fa-solid fa-star"></i>
                   <span></span>
@@ -153,10 +167,13 @@
                 <div class="vignette"></div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-4">
+            <div class="col-lg-3 col-md-6 my-3">
               <div class="movie-poster card">
                 <img src="" alt="" />
-                <div class="type chip"></div>
+                <div class="type chip">
+                  <i class="fa-solid"></i>
+                  <span></span>
+                </div>
                 <div class="rating chip">
                   <i class="fa-solid fa-star"></i>
                   <span></span>
@@ -176,9 +193,93 @@
           </div>
         </div>
       </section>
-      <section class="row" id="releases">
-        <h2>Lançamentos</h2>
-        <div class="container"></div>
+      <section class="row" id="playing">
+        <h2>Em cartaz</h2>
+        <div class="container">
+          <div class="spinner-container">
+            <div class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+          <div class="row my-2">
+            <div class="col-lg-3 col-md-6 my-3">
+              <div class="movie-poster card">
+                <img src="" alt="" />
+                <div class="rating chip">
+                  <i class="fa-solid fa-star"></i>
+                  <span></span>
+                </div>
+                <a
+                  class="link chip"
+                  target="_blank"
+                  referrerpolicy="no-referrer"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <span>TMDB</span>
+                </a>
+                <div class="title"></div>
+                <div class="vignette"></div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 my-3">
+              <div class="movie-poster card">
+                <img src="" alt="" />
+                <div class="rating chip">
+                  <i class="fa-solid fa-star"></i>
+                  <span></span>
+                </div>
+                <a
+                  class="link chip"
+                  target="_blank"
+                  referrerpolicy="no-referrer"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <span>TMDB</span>
+                </a>
+                <div class="title"></div>
+                <div class="vignette"></div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 my-3">
+              <div class="movie-poster card">
+                <img src="" alt="" />
+                <div class="rating chip">
+                  <i class="fa-solid fa-star"></i>
+                  <span></span>
+                </div>
+                <a
+                  class="link chip"
+                  target="_blank"
+                  referrerpolicy="no-referrer"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <span>TMDB</span>
+                </a>
+                <div class="title"></div>
+                <div class="vignette"></div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 my-3">
+              <div class="movie-poster card">
+                <img src="" alt="" />
+                <div class="rating chip">
+                  <i class="fa-solid fa-star"></i>
+                  <span></span>
+                </div>
+                <a
+                  class="link chip"
+                  target="_blank"
+                  referrerpolicy="no-referrer"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <span>TMDB</span>
+                </a>
+                <div class="title"></div>
+                <div class="vignette"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="row" id="best">
         <h2>Ranking</h2>

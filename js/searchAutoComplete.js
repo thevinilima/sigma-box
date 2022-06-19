@@ -30,7 +30,8 @@ const autoComplete = () => {
 
 searchForm.addEventListener('submit', e => {
   e.preventDefault();
-  location.href = `pesquisa.html?query=${searchInput.value}&page=1`;
+  if (searchInput.value)
+    location.href = `pesquisa.html?query=${searchInput.value}&page=1`;
 });
 
 let debounce = null;
