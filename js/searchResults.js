@@ -67,16 +67,16 @@ const listResult = () => {
     return;
   }
 
-  results.forEach(results => {
+  results.forEach(result => {
     const card = document.createElement('div');
     card.classList.add('list-card');
 
     const posterDiv = document.createElement('div');
     posterDiv.classList.add('poster');
     let poster = null;
-    if (results.poster_path || results.profile_path) {
+    if (result.poster_path || result.profile_path) {
       poster = document.createElement('img');
-      poster.src = IMG_BASE_URL + (results.poster_path || results.profile_path);
+      poster.src = IMG_BASE_URL + (result.poster_path || result.profile_path);
     } else {
       poster = document.createElement('i');
       poster.classList.add('fa-solid', 'fa-question', 'fa-3x');
@@ -89,13 +89,13 @@ const listResult = () => {
     const titleDiv = document.createElement('div');
     titleDiv.classList.add('title');
     const title = document.createElement('h4');
-    title.innerText = results.title || results.name;
+    title.innerText = result.title || result.name;
     titleDiv.appendChild(title);
     detailsDiv.appendChild(titleDiv);
 
     const descDiv = document.createElement('div');
     descDiv.classList.add('desc');
-    descDiv.innerText = results.overview || '';
+    descDiv.innerText = result.overview || '';
     detailsDiv.appendChild(descDiv);
 
     const chipsDiv = document.createElement('div');
@@ -104,6 +104,9 @@ const listResult = () => {
 
     card.appendChild(posterDiv);
     card.appendChild(detailsDiv);
+    card.addEventListener('click', () => {
+      location.href = `detalhes.html?type=${result.media_type}&id=${result.id}`;
+    });
 
     listEl.appendChild(card);
   });

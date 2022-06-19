@@ -12,9 +12,8 @@
   margin-right: 10px;
 }
 
-.actor:not(.hidden) {
+.actor .pic {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -27,17 +26,21 @@
   border: 1px solid #555;
 }
 
+.actor .actor-name,
+.actor .actor-role {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
 .actor .actor-name {
   margin-top: 10px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 .actor .actor-role {
   font-size: 0.9em;
   color: #aaa;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 #tmdb-data i {

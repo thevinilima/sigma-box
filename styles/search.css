@@ -10,6 +10,7 @@ main {
   box-shadow: 0 0 1em #222;
   border-radius: 10px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .poster img {
