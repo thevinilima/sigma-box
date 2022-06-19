@@ -23,6 +23,8 @@ let details = {};
 let credits = {};
 
 const fetchDetails = () => {
+  const spinner = document.getElementById('details-spinner');
+  spinner.classList.remove('hidden');
   api
     .get(`/${params.get('type')}/${params.get('id')}`, {
       params: {
@@ -32,7 +34,8 @@ const fetchDetails = () => {
     .then(({ data }) => {
       details = data;
       showDetails();
-    });
+    })
+    .finally(() => spinner.classList.add('hidden'));
 };
 
 const showDetails = () => {
@@ -71,6 +74,8 @@ const showDetails = () => {
 };
 
 const fetchCredits = () => {
+  const spinner = document.getElementById('cast-spinner');
+  spinner.classList.remove('hidden');
   api
     .get(`/${params.get('type')}/${params.get('id')}/credits`, {
       params: {
@@ -80,7 +85,8 @@ const fetchCredits = () => {
     .then(({ data }) => {
       credits = data;
       showCredits();
-    });
+    })
+    .finally(() => spinner.classList.add('hidden'));
 };
 
 const showCredits = () => {
