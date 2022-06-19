@@ -29,6 +29,27 @@
   background-color: #111;
 }
 
+.ac-items .ac-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.ac-items .ac-item .icon {
+  aspect-ratio: 639 / 933;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222;
+}
+
+.thumbnail {
+  width: 50px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #555;
+}
+
 .search-warning {
   font-size: 0.8em;
 }

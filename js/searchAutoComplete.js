@@ -1,4 +1,4 @@
-import api from './api.js';
+import api, { IMG_BASE_URL } from './api.js';
 
 const searchForm = document.getElementById('search-form');
 const searchInput = document.getElementById('search');
@@ -23,7 +23,31 @@ const autoComplete = () => {
 
   results.forEach(result => {
     const item = document.createElement('div');
-    item.innerText = result.title || result.name;
+    item.classList.add('ac-item');
+
+    let thumbnail = null;
+    if (result.poster_path) {
+      thumbnail = document.createElement('img');
+      thumbnail.classList.add('thumbnail');
+      thumbnail.src = IMG_BASE_URL + result.poster_path;
+    } else {
+      thumbnail = document.createElement('div');
+      thumbnail.classList.add('thumbnail', 'icon');
+      const icon = document.createElement('i');
+      icon.classList.add('fa-solid', 'fa-question');
+      thumbnail.appendChild(icon);
+    }
+    item.appendChild(thumbnail);
+
+    if (result.media_type !== 'person')
+      item.addEventListener('click', () => {
+        location.href = `detalhes.html?type=${result.media_type}&id=${result.id}`;
+      });
+
+    const textSpan = document.createElement('span');
+    textSpan.innerText = result.title || result.name;
+    item.appendChild(textSpan);
+
     listDiv.appendChild(item);
   });
 };

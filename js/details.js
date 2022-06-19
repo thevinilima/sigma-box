@@ -52,7 +52,15 @@ const showDetails = () => {
   typeChip.lastElementChild.innerText = types[params.get('type')].label;
 
   const posterImg = document.getElementById('poster');
-  posterImg.src = IMG_BASE_URL + details.poster_path;
+  if (details.poster_path) posterImg.src = IMG_BASE_URL + details.poster_path;
+  else {
+    posterImg.classList.add('hidden');
+    const posterContainer = document.getElementById('poster-container');
+    posterContainer.classList.add('icon');
+    const icon = document.createElement('i');
+    icon.classList.add('fa-solid', 'fa-question', 'fa-3x');
+    posterContainer.appendChild(icon);
+  }
 
   const title = document.getElementById('title');
   title.innerText =
