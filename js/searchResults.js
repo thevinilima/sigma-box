@@ -1,6 +1,4 @@
-import api from './api.js';
-
-const IMG_BASE_URL = 'https://image.tmdb.org/t/p/original';
+import api, { IMG_BASE_URL } from './api.js';
 
 const listEl = document.querySelector('.list');
 const searchInput = document.getElementById('search');

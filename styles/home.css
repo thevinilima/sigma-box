@@ -1,0 +1,74 @@
+.movie-details {
+  margin: 5px 0;
+}
+
+.movie-poster {
+  position: relative;
+  border-radius: 10px !important;
+  border: 1px solid #333 !important;
+  transition: all ease-in-out 300ms;
+}
+
+.movie-poster:hover {
+  transform: scale(1.075);
+}
+
+.movie-poster img {
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.movie-poster .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: #eee;
+  display: none;
+  z-index: 3;
+  text-shadow: 0 1px #000;
+  cursor: default;
+}
+
+.movie-poster .vignette {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 300px #000 inset;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.movie-poster .chip {
+  display: none;
+  position: absolute;
+  z-index: 3;
+}
+
+.movie-poster .type {
+  top: 10px;
+  left: 10px;
+}
+
+.movie-poster .rating {
+  top: 10px;
+  right: 5px;
+}
+
+.movie-poster .link {
+  bottom: 10px;
+  right: 5px;
+}
+
+.movie-poster:hover .title,
+.movie-poster:hover .vignette,
+.movie-poster:hover .type,
+.movie-poster:hover .rating,
+.movie-poster:hover .link {
+  display: initial;
+}
