@@ -8,6 +8,7 @@ main {
   display: flex;
   background-color: #000;
   box-shadow: 0 0 1em #222;
+  border: 1px solid #222;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
@@ -15,18 +16,24 @@ main {
 
 .poster img {
   width: 120px;
-  overflow: hidden;
-}
-
-.poster {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 120px;
 }
 
 .details {
+  width: 100%;
   padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.details .desc {
+  font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 nav button {
@@ -46,4 +53,19 @@ nav button .fa-solid {
 
 nav button.disabled .fa-solid {
   color: #555;
+}
+
+@media (max-width: 768px) {
+  .list-card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .poster img {
+    width: 100%;
+  }
+
+  .details {
+    padding: 20px;
+  }
 }
