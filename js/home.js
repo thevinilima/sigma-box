@@ -39,6 +39,7 @@ const fetchTrending = () => {
 };
 
 const listTrending = () => {
+  const cards = document.querySelectorAll('#trending .movie-poster');
   const posters = document.querySelectorAll('#trending .movie-poster img');
   const titles = document.querySelectorAll('#trending .movie-poster .title');
   const typeChips = document.querySelectorAll('#trending .movie-poster .type');
@@ -47,9 +48,9 @@ const listTrending = () => {
   );
   const linkChips = document.querySelectorAll('#trending .movie-poster .link');
 
-  posters.forEach((poster, index) => {
+  cards.forEach((card, index) => {
     const item = trending.results[index];
-    poster.src = IMG_BASE_URL + item.poster_path;
+    posters[index].src = IMG_BASE_URL + item.poster_path;
     titles[index].innerText =
       item.title || item.original_title || item.name || item.original_name;
     typeChips[index].firstElementChild.classList.add(
@@ -60,6 +61,9 @@ const listTrending = () => {
     linkChips[
       index
     ].href = `https://www.themoviedb.org/${item.media_type}/${item.id}`;
+    card.addEventListener('click', () => {
+      location.href = `detalhes.html?type=${item.media_type}&id=${item.id}`;
+    });
   });
 };
 
@@ -81,6 +85,7 @@ const fetchPlaying = () => {
 };
 
 const listPlaying = () => {
+  const cards = document.querySelectorAll('#playing .movie-poster');
   const posters = document.querySelectorAll('#playing .movie-poster img');
   const titles = document.querySelectorAll('#playing .movie-poster .title');
   const ratingChips = document.querySelectorAll(
@@ -88,12 +93,15 @@ const listPlaying = () => {
   );
   const linkChips = document.querySelectorAll('#playing .movie-poster .link');
 
-  posters.forEach((poster, index) => {
+  cards.forEach((card, index) => {
     const item = playing.results[index];
-    poster.src = IMG_BASE_URL + item.poster_path;
+    posters[index].src = IMG_BASE_URL + item.poster_path;
     titles[index].innerText =
       item.title || item.original_title || item.name || item.original_name;
     ratingChips[index].innerText = item.vote_average.toFixed(1);
     linkChips[index].href = `https://www.themoviedb.org/movie/${item.id}`;
+    card.addEventListener('click', () => {
+      location.href = `detalhes.html?type=movie&id=${item.id}`;
+    });
   });
 };

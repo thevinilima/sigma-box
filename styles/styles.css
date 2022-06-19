@@ -79,6 +79,7 @@ section > h2 {
   border: 1px solid #555;
   border-radius: 15px;
   font-size: 0.8em;
+  white-space: nowrap;
 }
 
 .chip i {

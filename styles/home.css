@@ -7,6 +7,7 @@
   border-radius: 10px !important;
   border: 1px solid #333 !important;
   transition: all ease-in-out 300ms;
+  cursor: pointer;
 }
 
 .movie-poster:hover {
@@ -30,7 +31,6 @@
   display: none;
   z-index: 3;
   text-shadow: 0 1px #000;
-  cursor: default;
 }
 
 .movie-poster .vignette {
