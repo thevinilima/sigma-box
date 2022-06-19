@@ -62,7 +62,7 @@ const showDetails = () => {
     details.original_name;
 
   const descDiv = document.getElementById('desc');
-  descDiv.innerText = details.overview;
+  descDiv.innerText = details.overview || '';
 
   const ratingSpan = document.querySelector('#rating span');
   ratingSpan.innerText = details.vote_average.toFixed(1);

@@ -104,9 +104,11 @@ const listResult = () => {
 
     card.appendChild(posterDiv);
     card.appendChild(detailsDiv);
-    card.addEventListener('click', () => {
-      location.href = `detalhes.html?type=${result.media_type}&id=${result.id}`;
-    });
+    if (result.media_type === 'person') card.style.cursor = 'default';
+    else
+      card.addEventListener('click', () => {
+        location.href = `detalhes.html?type=${result.media_type}&id=${result.id}`;
+      });
 
     listEl.appendChild(card);
   });
