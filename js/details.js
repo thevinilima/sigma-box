@@ -97,7 +97,10 @@ const showCredits = () => {
   const cast = credits.cast;
   cast.forEach((actor, index) => {
     actorsContainers[index].classList.remove('hidden');
-    actorsImgs[index].src = IMG_BASE_URL + actor.profile_path;
+    let imgSource = '';
+    if (actor.profile_path) imgSource = IMG_BASE_URL + actor.profile_path;
+    else imgSource = 'assets/icons/user.svg';
+    actorsImgs[index].src = imgSource;
     actorsNames[index].innerText = actor.name || actor.original_name;
     actorsRoles[index].innerText = actor.character;
   });
