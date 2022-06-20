@@ -72,6 +72,7 @@ searchInput.addEventListener('input', () => {
 
   if (!loading) {
     listDiv.innerHTML = null;
+    listDiv.classList.remove('hidden');
     const spinnerContainer = document.createElement('div');
     spinnerContainer.classList.add('spinner-container');
     const spinner = document.createElement('div');
@@ -110,4 +111,13 @@ searchInput.addEventListener('input', () => {
         loading = false;
       });
   }, 1000);
+});
+
+searchInput.addEventListener('focus', () => {
+  listDiv.classList.remove('hidden');
+});
+
+document.addEventListener('click', () => {
+  if (searchInput.value && searchInput !== document.activeElement)
+    listDiv.classList.add('hidden');
 });
