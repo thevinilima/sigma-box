@@ -14,6 +14,12 @@ main {
   cursor: pointer;
 }
 
+.poster {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .poster img {
   width: 120px;
 }
