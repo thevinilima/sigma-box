@@ -68,6 +68,7 @@ nav button.disabled .fa-solid {
     height: auto;
   }
 
+  .poster,
   .poster img {
     width: 100%;
   }
