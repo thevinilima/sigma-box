@@ -6,6 +6,10 @@
   color: #aaa;
 }
 
+.btn-outline-secondary {
+  border-color: #555 !important;
+}
+
 .autocomplete button:hover {
   background-color: #222;
 }

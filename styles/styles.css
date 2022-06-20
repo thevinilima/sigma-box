@@ -102,3 +102,7 @@ a.chip:hover {
 footer {
   padding: 20px 0;
 }
+
+footer .col-3 {
+  white-space: nowrap;
+}
