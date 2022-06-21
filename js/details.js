@@ -63,11 +63,12 @@ const showDetails = () => {
   }
 
   const title = document.getElementById('title');
-  title.innerText =
+  title.innerText = document.title =
     details.title ||
     details.original_title ||
     details.name ||
     details.original_name;
+  document.title += ' - Sigma Box';
 
   const year = document.getElementById('year');
   const dateStr = details.release_date || details.first_air_date;

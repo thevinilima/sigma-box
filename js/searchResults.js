@@ -25,6 +25,7 @@ const search = () => {
   listEl.appendChild(spinnerContainer);
 
   const params = new URLSearchParams(location.search);
+  document.title = `“${params.get('query')}” - Sigma Box`;
   searchInput.value = params.get('query');
   pagination.page = params.get('page') || 1;
   api
@@ -68,7 +69,7 @@ const listResult = () => {
   }
 
   results.forEach(result => {
-    const card = document.createElement('div');
+    const card = document.createElement('a');
     card.classList.add('list-card');
 
     const posterDiv = document.createElement('div');
@@ -105,10 +106,7 @@ const listResult = () => {
     card.appendChild(posterDiv);
     card.appendChild(detailsDiv);
     if (result.media_type === 'person') card.style.cursor = 'default';
-    else
-      card.addEventListener('click', () => {
-        location.href = `detalhes.html?type=${result.media_type}&id=${result.id}`;
-      });
+    else card.href = `detalhes.html?type=${result.media_type}&id=${result.id}`;
 
     listEl.appendChild(card);
   });

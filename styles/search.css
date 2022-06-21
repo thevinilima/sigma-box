@@ -10,8 +10,14 @@ main {
   box-shadow: 0 0 1em #222;
   border: 1px solid #222;
   border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
   overflow: hidden;
   cursor: pointer;
+}
+
+.list-card:hover {
+  color: inherit;
 }
 
 .poster {

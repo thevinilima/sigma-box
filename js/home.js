@@ -23,7 +23,9 @@ let playing = {};
 let ranking = {};
 
 const fetchTrending = () => {
+  const cardsContainer = document.querySelector('#trending .row.mb-2');
   const spinner = document.querySelector('#trending .spinner-container');
+  cardsContainer.classList.add('hidden');
   spinner.classList.remove('hidden');
   api
     .get('/trending/all/week', {
@@ -35,7 +37,10 @@ const fetchTrending = () => {
       trending = data;
       listTrending();
     })
-    .finally(() => spinner.classList.add('hidden'));
+    .finally(() => {
+      spinner.classList.add('hidden');
+      cardsContainer.classList.remove('hidden');
+    });
 };
 
 const listTrending = () => {
@@ -57,14 +62,14 @@ const listTrending = () => {
     );
     typeChips[index].lastElementChild.innerText = types[item.media_type].label;
     ratingChips[index].innerText = item.vote_average.toFixed(1);
-    card.addEventListener('click', () => {
-      location.href = `detalhes.html?type=${item.media_type}&id=${item.id}`;
-    });
+    card.href = `detalhes.html?type=${item.media_type}&id=${item.id}`;
   });
 };
 
 const fetchPlaying = () => {
+  const cardsContainer = document.querySelector('#playing .row.mb-2');
   const spinner = document.querySelector('#playing .spinner-container');
+  cardsContainer.classList.add('hidden');
   spinner.classList.remove('hidden');
   api
     .get('/movie/now_playing', {
@@ -77,7 +82,10 @@ const fetchPlaying = () => {
       playing = data;
       listPlaying();
     })
-    .finally(() => spinner.classList.add('hidden'));
+    .finally(() => {
+      spinner.classList.add('hidden');
+      cardsContainer.classList.remove('hidden');
+    });
 };
 
 const listPlaying = () => {
@@ -94,8 +102,6 @@ const listPlaying = () => {
     titles[index].innerText =
       item.title || item.original_title || item.name || item.original_name;
     ratingChips[index].innerText = item.vote_average.toFixed(1);
-    card.addEventListener('click', () => {
-      location.href = `detalhes.html?type=movie&id=${item.id}`;
-    });
+    card.href = `detalhes.html?type=movie&id=${item.id}`;
   });
 };
