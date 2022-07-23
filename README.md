@@ -1,2 +1,4 @@
-# sigma-box
-Portal de filmes - Trabalhos 1 e 2 de DIW
+# Sigma Box
+Portal de filmes com integração à API do The Movie Database
+
+Projeto implementado para a disciplina de Desenvolvimento de Interfaces Web da PUC Minas
